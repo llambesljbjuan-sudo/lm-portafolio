@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha técnica del PC A1-Alumno11 del aula de ASIR: placa MSI, Intel Core i5-13400, 16 GB de RAM y SSD de 240 GB con Windows 11 Pro.">
+  <title>Ficha técnica · PC A1-Alumno11 · Inventario del aula</title>
+</head>
+<body>
+  <header>
+    <h1>Ficha técnica del PC A1-Alumno11</h1>
+    <p>Inventario del aula de ASIR · Elaborada por Juan Llambes</p>
+    <nav>
+      <p>
+        Ir a:
+        <a href="#hardware">Hardware</a> ·
+        <a href="#software">Software</a> ·
+        <a href="#mantenimiento">Mantenimiento</a>
+      </p>
+    </nav>
+  </header>
+
+  <main>
+    <section id="resumen">
+      <h2>Resumen del equipo</h2>
+      <img src="img/pc.jpg" alt="Torre del PC A1-Alumno11 en su puesto del aula" width="400" height="300">
+      <p>
+        Equipo de sobremesa del puesto 11 del aula, usado para las prácticas
+        de redes, sistemas y programación.
+      </p>
+    </section>
+
+    <section id="hardware">
+      <h2>Hardware</h2>
+      <dl>
+        <dt>Fabricante de la placa base</dt>
+        <dd class="dato">Micro-Star International (MSI)</dd>
+        <dt>Modelo</dt>
+        <dd class="dato">MS-7D48</dd>
+        <dt>Procesador</dt>
+        <dd class="dato">Intel Core i5-13400 (13.ª generación, 10 núcleos)</dd>
+        <dt>Memoria RAM</dt>
+        <dd class="dato">16&nbsp;GB</dd>
+        <dt>Almacenamiento</dt>
+        <dd class="dato">SSD Crucial CT240BX500SSD1 de 240&nbsp;GB (224&nbsp;GB útiles)</dd>
+        <dt>Gráfica</dt>
+        <dd class="dato">Intel UHD Graphics 730 (integrada)</dd>
+      </dl>
+      <p>
+        Más información en la
+        <a href="https://www.msi.com/" target="_blank" rel="noopener noreferrer">web del fabricante (MSI)</a>.
+      </p>
+    </section>
+
+    <section id="software">
+      <h2>Software</h2>
+      <ul>
+        <li>Sistema operativo: <span class="dato">Microsoft Windows 11 Pro</span> (versión <span class="dato">10.0.26200</span>)</li>
+        <li>Editor de código: Visual Studio Code</li>
+        <li>Control de versiones: Git</li>
+        <li>Simulador de redes: Cisco Packet Tracer</li>
+      </ul>
+    </section>
+
+    <section id="mantenimiento">
+      <h2>Mantenimiento</h2>
+      <h3>Cómo obtener estos datos</h3>
+      <ol>
+        <li>Abrir PowerShell en el equipo.</li>
+        <li>Ejecutar <code>Get-CimInstance Win32_ComputerSystem</code> para el fabricante, el modelo y la RAM.</li>
+        <li>Ejecutar <code>Get-CimInstance Win32_Processor</code> para el procesador.</li>
+        <li>Ejecutar <code>Get-PhysicalDisk</code> para el disco.</li>
+        <li>Anotar los resultados en esta ficha y actualizar la fecha.</li>
+      </ol>
+      <p>Última revisión: <time datetime="2026-10-30">30 de octubre de 2026</time>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#resumen">Volver arriba</a> · <a href="taller.html">Ver la página del taller</a></p>
+  </footer>
+</body>
+</html>
